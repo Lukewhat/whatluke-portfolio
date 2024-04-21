@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/uikit.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.js"></script>
+    <style>
+        .custom-offcanvas-toggle {
+            position: relative;
+            left: 0;
+            margin-top: 20px;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+        }
+        .contact-info {
+            font-size: 18px;
+            text-align: left;
+        }
+        .contact-button {
+            font-size: 18px;
+            padding: 10px 20px;
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+    <title>Portfolio</title>
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-visible@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <div class="uk-navbar-left">
+        <a href="" class="uk-navbar-item uk-logo uk-light">Luke's Portfolio.</a>
+    </div>
+</nav>
+<!-- Navigation Bar Ends  -->
+
+<!-- Navigation Bar Mobile -->
+<nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-hidden@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <div class="uk-navbar-left">
+        <a href="" class="uk-navbar-item uk-logo uk-light">Portfolio.</a>
+    </div>
+    <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav uk-light">
+            <!-- Removed the button from the corner -->
+        </ul>
+    </div>
+</nav>
+<!-- Change This -->
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            <!-- Removed Projects Button -->
+        </ul>
+        <p class="uk-margin-medium-left uk-light contact-info">To contact me, you can add me on Discord: whatlukee</p>
+        <a href="https://discord.com/users/1230556696028647485" target="_blank" class="uk-margin-medium-left uk-button uk-button-secondary contact-info contact-button">Contact Me</a>
+    </div>
+</div>
+
+<!-- Navigation Bar Mobile Ends -->
+<!-- Home -->
+<section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+    <h1 class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right">I'm Luke, a Programmer.</h1>
+    <button uk-toggle="target: #offcanvas-nav" type="button" uk-navbar-toggle-icon class="custom-offcanvas-toggle"></button>
+</section>
+<!-- Home Ends -->
+
+<!-- About Me -->
+<section id="about" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+    <h3 class="uk-margin-xlarge-left uk-light">About Me</h3>
+    <!-- Change here to your paragraph -->
+    <p class="uk-margin-xlarge-left uk-margin-xlarge-right">Hey there! I'm a programmer passionate about crafting Discord bots. I started scripting when I was 13 and have since honed my skills in various programming languages. In addition to Discord bot development, I also specialize in Roblox Lua. Whether it's automating tasks, enhancing moderation capabilities, or just bringing some entertainment, I thrive on the creative possibilities of coding. Let's build something awesome together!</p>
+</section>
+<!-- About Me Ends -->
+
+</body>
+</html>
