@@ -1,8 +1,3 @@
-html {
-    height: 100%;
-    width: 100%;
-}
-
 .neon-button {
     font-size: 18px;
     padding: 10px 20px;
@@ -16,7 +11,7 @@ html {
     border-radius: 25px;
     border: none;
     cursor: pointer;
-    transition: 0.5s;
+    transition: background-position 0.5s; /* Adjusted transition property */
 }
 
 .neon-button:hover {
