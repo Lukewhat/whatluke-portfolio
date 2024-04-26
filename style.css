@@ -1,4 +1,24 @@
 html {
     height: 100%;
     width: 100%;
-  }
+}
+
+.neon-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+    color: #fff;
+    background: linear-gradient(to right, #00ff00 50%, #ff00ff 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.neon-button:hover {
+    background-position: left bottom;
+}
